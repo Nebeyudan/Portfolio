@@ -10,7 +10,7 @@
       "report": "/static/docs/health-app-report.pdf"
     },
     "images": ["/static/img/health-app.png"],
-    "highlight": true
+    "highlight": false
   },
   {
     "title": "StockTracker (Flask + Python)",
