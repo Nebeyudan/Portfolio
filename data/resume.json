@@ -1,0 +1,96 @@
+{
+  "name": "Nebeyu Daniel",
+  "location": "Silver Spring, Maryland",
+  "contact": {
+    "phone": "301-674-2109",
+    "email": "nebeyudan@gmail.com"
+  },
+  "education": [
+    {
+      "institution": "University of Maryland",
+      "location": "College Park, MD",
+      "degree": "Bachelor of Science in Computer Science",
+      "graduation": "Expected Dec 2025"
+    },
+    {
+      "institution": "Montgomery College",
+      "location": "Rockville, MD",
+      "degree": "Associate of Science in Computer Science",
+      "graduation": "May 2023"
+    }
+  ],
+  "relevant_courses": [
+    "Programming (C++, Java, Python, OCaml, Rust)",
+    "Discrete Structures",
+    "Calculus",
+    "Introduction to Computer Systems (Linux, C, MIPS & x86_64 Assembly)",
+    "Algorithms",
+    "Advanced Data-Structures",
+    "Introduction to Artificial Intelligence",
+    "Introduction to Machine Learning",
+    "Introduction to Human-Computer Interaction (UI/UX Development)",
+    "Web Application Development (JavaScript, HTML, CSS, PHP, React, NodeJS)",
+    "Building Secure Web Application (Flask & Python)",
+    "Applied Probability and Statistics",
+    "Writing for Non-Profit Organizations"
+  ],
+  "projects": [
+    {
+      "title": "Stock Trading Simulator (Flask)",
+      "description": "Collaborated with a team to develop a Flask-based Stock Trading Simulator that enabled users to buy/sell stocks, track portfolios in real time, and view price data, leveraging API-driven data retrieval and a MongoDB backend for persistent user accounts."
+    },
+    {
+      "title": "Terrain Mapping System (Java)",
+      "description": "Built a Java terrain mapping system with a doubly linked list for efficient insertion, deletion, and traversal, achieving O(N + Q) time complexity."
+    },
+    {
+      "title": "Integrated Health/Fitness Application (HTML/CSS/JS)",
+      "description": "Collaborated with a team to design and implement an HTML/JS/CSS integrated health app, focusing on user-centric interface design and smooth utility for tracking health and exercise goals."
+    }
+  ],
+  "voluntary_education": [
+    {
+      "organization": "Future Link, Inc",
+      "location": "Rockville, MD",
+      "date": "Sep 2022 – Present",
+      "description": "Completed a 15-week career and job skill development seminar and delivered the commencement speech to over 100 people. Continue to work with a mentor to reach education and career goals."
+    }
+  ],
+  "certifications": [
+    "Google IT Support Certificate (5-course series on Coursera: Technical Support Fundamentals, Networking, Operating Systems, System Administration, IT Security)"
+  ],
+  "skills": [
+    "Microsoft Word, PowerPoint, Excel",
+    "Google Docs, Slides, Sheets",
+    "Git, GitHub",
+    "Canva",
+    "NOVA DS"
+  ],
+  "experience": [
+    {
+      "company": "SecureTech360",
+      "location": "Arlington, VA",
+      "title": "IT Intern (remote/on-site)",
+      "date": "Jun 2023 – Jul 2023",
+      "bullets": [
+        "Designed and implemented a Python tool for generating secure, random passwords, integrating a strength evaluation algorithm aligned with security best practices.",
+        "Delivered a technical report through PowerPoint, later used as a training resource, showcasing ability to communicate complex ideas effectively.",
+        "Developed robotics and cybersecurity curricula for SecureTech360’s MySecureKid summer camp.",
+        "Performed maintenance and troubleshooting on lab computers to ensure stability and functionality.",
+        "Communicated project progress proactively, demonstrating initiative and collaboration.",
+        "Provided research materials on cybersecurity involvement with Fintech."
+      ]
+    },
+    {
+      "company": "Cazbar",
+      "location": "Columbia, MD",
+      "title": "Server/Trainer",
+      "date": "Jun 2021 – Present",
+      "bullets": [
+        "Delivered excellent customer service by anticipating customer needs and ensuring satisfaction.",
+        "Led and mentored staff, collaborating with management to improve restaurant operations.",
+        "Fostered a collaborative and trustworthy team environment through effective communication."
+      ]
+    }
+  ]
+}

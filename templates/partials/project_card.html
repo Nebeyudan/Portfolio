@@ -1,0 +1,10 @@
+<article class="card">
+  <a href="{{ url_for('project_detail', slug=p.slug) }}" class="card-body">
+    {% if p.images %}<img class="card-img" src="{{ p.images[0] }}" alt="{{ p.title }}">{% endif %}
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.summary }}</p>
+    <div class="tags-inline">
+      {% for t in p.tags %}<span class="chip">{{ t }}</span>{% endfor %}
+    </div>
+  </a>
+</article>

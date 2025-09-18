@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}{{ p.title }}{% endblock %}
+{% block content %}
+<article>
+  <h1>{{ p.title }}</h1>
+  <p class="muted">Tags: {{ p.tags|join(', ') }}</p>
+  <p>{{ p.description }}</p>
+
+  {% if p.images %}
+  <div class="gallery">
+    {% for img in p.images %}
+      <img src="{{ img }}" alt="{{ p.title }} image">
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if p.links %}
+  <div class="links">
+    {% for name, href in p.links.items() %}
+      <a class="btn" href="{{ href }}" target="_blank" rel="noopener">{{ name|title }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p style="margin-top: 2rem;">
+    <a class="btn btn-outline" href="{{ url_for('projects') }}">← Back to Projects</a>
+  </p>
+</article>
+{% endblock %}

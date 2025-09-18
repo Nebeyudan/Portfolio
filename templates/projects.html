@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Projects{% endblock %}
+{% block content %}
+<h1>Projects</h1>
+<div class="grid">
+{% for p in projects %}
+{% include 'partials/project_card.html' %}
+{% else %}
+<p>No projects yet.</p>
+{% endfor %}
+</div>
+{% endblock %}

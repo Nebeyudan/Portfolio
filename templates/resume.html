@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Résumé{% endblock %}
+{% block content %}
+<h1>{{ r.name }}</h1>
+<p>{{ r.location }} | {{ r.contact.phone }} | <a href="mailto:{{ r.contact.email }}">{{ r.contact.email }}</a></p>
+
+<h2>Education</h2>
+<ul>
+  {% for edu in r.education %}
+    <li><strong>{{ edu.institution }}</strong>, {{ edu.location }} — {{ edu.degree }} ({{ edu.graduation }})</li>
+  {% endfor %}
+</ul>
+
+<h2>Relevant Courses</h2>
+<p>{{ r.relevant_courses | join(', ') }}</p>
+
+<h2>Projects</h2>
+<ul>
+  {% for proj in r.projects %}
+    <li><strong>{{ proj.title }}</strong>: {{ proj.description }}</li>
+  {% endfor %}
+</ul>
+
+<h2>Work Experience</h2>
+{% for job in r.experience %}
+  <h3>{{ job.company }} | {{ job.location }}</h3>
+  <p><em>{{ job.title }} ({{ job.date }})</em></p>
+  <ul>
+    {% for bullet in job.bullets %}
+      <li>{{ bullet }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<h2>Certifications</h2>
+<ul>
+  {% for c in r.certifications %}
+    <li>{{ c }}</li>
+  {% endfor %}
+</ul>
+
+<h2>Skills</h2>
+<p>{{ r.skills | join(', ') }}</p>
+{% endblock %}

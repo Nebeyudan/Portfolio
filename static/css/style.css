@@ -1,0 +1,182 @@
+/* ===== Global Variables ===== */
+:root {
+  --bg: #fdfdfd;
+  --fg: #111;
+  --accent: #2563eb;
+  --muted: #666;
+  --radius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e0e0e;
+    --fg: #f8f8f8;
+    --muted: #aaa;
+  }
+}
+
+/* ===== Base Layout ===== */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  flex: 1;
+}
+
+/* ===== Navbar & Footer ===== */
+.navbar, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 1rem;
+  background: var(--bg);
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+.hero-actions .btn {
+  margin: .5rem;
+}
+
+/* ===== Grid & Cards ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+  overflow: hidden;
+  transition: transform .2s;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-body {
+  display: block;
+  color: var(--fg);
+  text-decoration: none;
+  padding: 1rem;
+}
+.card-body h3 {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+.card-body p {
+  margin: 0;
+  color: var(--fg);
+}
+.card-img {
+  width: 100%;
+  height: 180px; /* fixed height for uniform cards */
+  object-fit: cover; /* crop and fill nicely */
+  display: block;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1a1a1a;
+    box-shadow: 0 1px 4px rgba(255,255,255,.05);
+  }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+.btn-outline {
+  background: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+/* ===== Forms & Tables ===== */
+.form label {
+  display: block;
+  margin: .5rem 0;
+}
+input, textarea {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: .5rem;
+  text-align: left;
+}
+
+/* ===== Tags & Badges ===== */
+.muted {
+  color: var(--muted);
+  font-size: .9em;
+}
+.chip {
+  background: #eee;
+  border-radius: var(--radius);
+  padding: 0 .5rem;
+  margin-right: .25rem;
+  font-size: .8em;
+}
+@media (prefers-color-scheme: dark) {
+  .chip {
+    background: #333;
+    color: var(--fg);
+  }
+}
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Error Text ===== */
+.error {
+  color: red;
+  font-weight: bold;
+}

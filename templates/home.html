@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Home — Nebeyu Daniel{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Nebeyu Daniel Computer Science Major @ UMD</h1>
+  <p>I am pursuing a Computer Science degree at the University of Maryland due to my love for computers and the creativity and abstractions of programming. My studies have given me a solid foundation in programming, data structures, and algorithms, with experience in Python, C, Java, and assembly languages. Additionally, during my internship at SecureTech360, I developed system troubleshooting, maintenance, and cybersecurity research skills. I also showcased my programming skills by creating a password generator, which required me to prepare a report and presentation to management containing my project specifications and development plans. This experience has enhanced my ability to approach complex problems methodically and improved my technical skills. Aside from my experience, I have a deep passion for problem-solving and believe I will be a great team member who takes accountability for my actions and understands moments where my leadership may be necessary. I am excited about the prospect of bringing my programming creativity, problem-solving skills, and IT fundamentals to your company. My passion for continuous learning, coupled with my ability to adapt and excel in collaborative environments, makes me confident that I can be a valuable addition to your team. I am eager to contribute to your company's mission and learn from the organization.</p>
+  <div class="hero-actions">
+    <a href="{{ url_for('projects') }}" class="btn">View Projects</a>
+    <a href="{{ url_for('resume') }}" class="btn btn-outline">Résumé</a>
+  </div>
+</section>
+<section>
+  <h2>Highlights</h2>
+  <div class="grid">
+    {% for p in projects %}
+      {% include 'partials/project_card.html' %}
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Messages{% endblock %}
+{% block content %}
+<h1>Inbox</h1>
+<table class="table">
+  <thead>
+    <tr><th>ID</th><th>Name</th><th>Email</th><th>Subject</th><th>Message</th><th>Timestamp</th></tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td>{{ row.id }}</td>
+      <td>{{ row.name }}</td>
+      <td>{{ row.email }}</td>
+      <td>{{ row.subject }}</td>
+      <td>{{ row.message }}</td>
+      <td>{{ row.ts }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
