@@ -54,19 +54,26 @@ def get_db():
 with get_db() as db:
     db.executescript(SCHEMA_SQL)
 
-
 @app.route("/")
 def home():
-# sort so highlight=True projects appear first
-    top_projects = sorted(PROJECTS, key=lambda p: p.get("highlight", False), reverse=True)
+    # Only include highlighted projects
+    highlighted = [p for p in PROJECTS if p.get("highlight") is True or str(p.get("highlight")).lower() == "true"]
+    top_projects = sorted(highlighted, key=lambda p: p.get("title", ""))
     return render_template("home.html", projects=top_projects[:6])
+
+
 
 
 
 @app.route("/projects")
 def projects():
-# Simply pass all projects directly, no tag filtering or categories
-    return render_template("projects.html", projects=PROJECTS)
+    sorted_projects = sorted(
+        PROJECTS,
+        key=lambda p: bool(str(p.get("highlight", False)).lower() == "true" or p.get("highlight") is True),
+        reverse=True
+    )
+    return render_template("projects.html", projects=sorted_projects)
+
 
 @app.route("/projects/<slug>")
 def project_detail(slug):
