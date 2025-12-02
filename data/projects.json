@@ -1,43 +1,59 @@
 [
   {
     "title": "Integrated Health/Fitness Application (JavaScript/CSS/HTML)",
-    "slug": "Health Fitness App",
+    "course_or_type": "CMSC 434 (Intro to Human and Computer Interaction) Group Project",
+    "dates": "Fall 2024",
+    "tools": ["JavaScript", "HTML", "CSS", "Software Development"],
     "summary": "Collaborated with a team to design and implement an HTML/JS/CSS integrated health app, focusing on user-centric interface design and smooth utility for tracking health and exercise goals.",
-    "description": "Designed an Integrated application through the use of HTML, CSS, and JavaScript. The application allows users to track their health and fitness goals through a user-friendly interface. Implemented features such as goal setting, progress tracking, and data visualization to enhance user engagement and motivation.",
-    "tags": ["JavaScript", "HTML", "CSS", "Software Development"],
+    "bullets": [
+      "Designed a health-tracking interface with goal setting, progress visualization, and user reminders.",
+      "Developed with responsive layouts and intuitive design patterns for accessibility and cross-device compatibility.",
+      "Coordinated development tasks and integrated modules through version control using GitHub."
+    ],
+    "slug": "health-fitness-app",
+    "images": ["/static/img/health-app.png"],
     "links": {
       "github": "https://github.com/Nebeyudan/434-Health-App",
       "report": "/static/docs/health-app-report.pdf"
     },
-    "images": ["/static/img/health-app.png"],
     "highlight": false
   },
   {
     "title": "StockTracker (Flask + Python)",
+    "course_or_type": "CMSC 388J (Building Secure Webpages with Flask) Group Project",
+    "dates": "Spring 2025",
+    "tools": ["Python", "Flask", "TailwindCSS", "APIs", "Full Stack", "MongoDB", "HTML"],
+    "summary": "Full-stack stock tracking web application with user login, and stock searchs.",
+    "bullets": [
+      "Implemented authentication and session-based user accounts with persistent MongoDB storage.",
+      "Built an API-integrated stock search feature that displays ticker data, daily changes, and charts.",
+      "Developed watchlist creation and editing capabilities with real-time updates to stock prices.",
+      "Designed a responsive TailwindCSS-based UI and deployed on Vercel for peer testing and feedback."
+    ],
     "slug": "stock-tracker",
-    "summary": "Full-stack stock tracking web appliation with login, search, and personalized watchlists.",
-    "description":"Collaborated on building a full-stack web application using Flask and Python that allows users to track stock market data. Implemented user authentication, stock search functionality, and personalized watchlists. Designed a responsive UI with TailwindCSS and deployed the application on Vercel.",
-    "tags": ["Python", "Flask", "TailwindCSS", "APIs", "Full Stack", "MongoDB", "HTML"],
+    "images": ["/static/img/Screenshot 2025-09-18 144831.png"],
     "links": {
-    "demo": "https://stock-tracker-388j.vercel.app/",
-    "github": "https://github.com/Nebeyudan/stock-tracker",
-    "report": "/static/docs/CMSC388J Final Write-Up.pdf"
-  },
-  "images": ["/static/img/Screenshot 2025-09-18 144831.png"],
-  "highlight": true
+      "github": "https://github.com/Nebeyudan/stock-tracker",
+      "report": "/static/docs/CMSC388J Final Write-Up.pdf"
+    },
+    "highlight": true
   },
   {
-  "title": "Machine Learning Neural Network Models",
-  "slug": "ml-neural-networks",
-  "summary": "Implemented perceptron, non-linear regression, digit classification, and language identification neural networks in Python.",
-  "description": "Developed multiple neural network models from scratch as part of an advanced machine learning course project. Implemented a perceptron classifier, designed and trained models for non-linear regression, MNIST digit classification, and language identification tasks using custom-built forward and backward passes. Optimized training through batching and experimented with network architectures to improve accuracy.",
-  "tags": ["Python", "Machine Learning", "Neural Networks", "AI"],
-  "links": {
-    "README": "/static/docs/README.pdf"
-  },
-  "images": ["/static/img/Screenshot 2025-09-18 151432.png"],
-  "highlight": true
+    "title": "Machine Learning Neural Network Models",
+    "course_or_type": "CMSC 421 (intro to AI) Project",
+    "dates": "Spring 2025",
+    "tools": ["Python", "Machine Learning", "Neural Networks", "AI"],
+    "summary": "Implemented perceptron, non-linear regression, digit classification, and language identification neural networks in Python.",
+    "bullets": [
+      "Developed perceptron and multi-layer neural networks from scratch for classification and regression tasks.",
+      "Trained and evaluated models on MNIST digits and language identification datasets using custom backpropagation.",
+      "Optimized model accuracy through hyperparameter tuning and architectural experimentation."
+    ],
+    "slug": "ml-neural-networks",
+    "images": ["/static/img/Screenshot 2025-09-18 151432.png"],
+    "links": {
+      "report": "/static/docs/README.pdf"
+    },
+    "highlight": true
   }
-
-
 ]

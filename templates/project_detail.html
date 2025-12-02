@@ -1,21 +1,39 @@
 {% extends 'base.html' %}
 {% block title %}{{ p.title }}{% endblock %}
+
 {% block content %}
 <article>
-  <h1>{{ p.title }}</h1>
-  <p class="muted">Tags: {{ p.tags|join(', ') }}</p>
-  <p>{{ p.description }}</p>
+  <h1>{{ p.title }} – {{ p.course_or_type }}</h1>
+  {% if p.dates %}
+    <p class="muted">{{ p.dates }}</p>
+  {% endif %}
+  {% if p.tools %}
+    <p><strong>Tools / Technologies:</strong> {{ p.tools | join(', ') }}</p>
+  {% endif %}
+
+  <h2>Description &amp; Results</h2>
+  {% if p.summary %}
+    <p>{{ p.summary }}</p>
+  {% endif %}
+
+  {% if p.bullets %}
+    <ul>
+      {% for b in p.bullets %}
+        <li>{{ b }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 
   {% if p.images %}
-  <div class="gallery">
+  <div class="gallery" style="margin:1rem 0;">
     {% for img in p.images %}
-      <img src="{{ img }}" alt="{{ p.title }} image">
+      <img src="{{ img }}" alt="{{ p.title }} image" style="max-width:100%;height:auto;margin-bottom:.5rem;border-radius:6px;">
     {% endfor %}
   </div>
   {% endif %}
 
   {% if p.links %}
-  <div class="links">
+  <div class="links" style="margin-top:1rem;">
     {% for name, href in p.links.items() %}
       <a class="btn" href="{{ href }}" target="_blank" rel="noopener">{{ name|title }}</a>
     {% endfor %}
