@@ -70,9 +70,9 @@
   "slug": "philosophy-chatbot",
   "images": ["/static/img/Screenshot 2025-10-19 141429.png"],
   "links": {
-    "demo": "#",
-    "github": "#",
-    "writeup": "#"
+    //"demo": "#",
+    //"github": "#",
+    //"writeup": "#"
   },
   "highlight": true
 }
