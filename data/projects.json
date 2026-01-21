@@ -1,7 +1,7 @@
 [
   {
     "title": "Integrated Health/Fitness Application (JavaScript/CSS/HTML)",
-    "course_or_type": "CMSC 434 (Intro to Human and Computer Interaction) Group Project",
+    "course_or_type": "Course Group Project",
     "dates": "Fall 2024",
     "tools": ["JavaScript", "HTML", "CSS", "Software Development"],
     "summary": "Collaborated with a team to design and implement an HTML/JS/CSS integrated health app, focusing on user-centric interface design and smooth utility for tracking health and exercise goals.",
@@ -20,7 +20,7 @@
   },
   {
     "title": "StockTracker (Flask + Python)",
-    "course_or_type": "CMSC 388J (Building Secure Webpages with Flask) Group Project",
+    "course_or_type": "Course Group Project",
     "dates": "Spring 2025",
     "tools": ["Python", "Flask", "TailwindCSS", "APIs", "Full Stack", "MongoDB", "HTML"],
     "summary": "Full-stack stock tracking web application with user login, and stock searchs.",
@@ -40,7 +40,7 @@
   },
   {
     "title": "Machine Learning Neural Network Models",
-    "course_or_type": "CMSC 421 (intro to AI) Project",
+    "course_or_type": "Course Project",
     "dates": "Spring 2025",
     "tools": ["Python", "Machine Learning", "Neural Networks", "AI"],
     "summary": "Implemented perceptron, non-linear regression, digit classification, and language identification neural networks in Python.",
@@ -54,6 +54,26 @@
     "links": {
       "report": "/static/docs/README.pdf"
     },
-    "highlight": true
-  }
+    "highlight": false
+  },
+  {
+  "title": "Personal Philosophy Chatbot",
+  "course_or_type": "Independent Project",
+  "dates": "2025",
+  "tools": ["Python", "Flask", "LLMs", "APIs", "HTML", "CSS", "JavaScript"],
+  "summary": "Built a web-based philosophy chatbot that answers questions and helps users refine arguments with structured, context-aware responses.",
+  "bullets": [
+    "Implemented a chat UI with conversation history and prompt-handling to support multi-turn Q&A and argument refinement.",
+    "Integrated an LLM API to generate responses, with guardrails for safe prompting and clear output formatting.",
+    "Designed an interface for exploring topics (ethics, epistemology, consciousness) and generating outlines or counterarguments."
+  ],
+  "slug": "philosophy-chatbot",
+  "images": ["/static/img/philosophy-chatbot.png"],
+  "links": {
+    "demo": "#",
+    "github": "#",
+    "writeup": "#"
+  },
+  "highlight": true
+}
 ]

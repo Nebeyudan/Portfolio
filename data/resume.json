@@ -10,7 +10,7 @@
       "institution": "University of Maryland",
       "location": "College Park, MD",
       "degree": "Bachelor of Science in Computer Science",
-      "graduation": "Expected Dec 2025"
+      "graduation": "Dec 2025"
     },
     {
       "institution": "Montgomery College",
@@ -37,11 +37,11 @@
   "projects": [
     {
       "title": "Stock Trading Simulator (Flask)",
-      "description": "Collaborated with a team to develop a Flask-based Stock Trading Simulator that enabled users to buy/sell stocks, track portfolios in real time, and view price data, leveraging API-driven data retrieval and a MongoDB backend for persistent user accounts."
+      "description": "Collaborated in a team environment to deploy a Flask-based Stock Trading Simulator that allows users to buy and sell stocks, track their stock portfolios in real time, and view price data, using an API driven data retrieval and MongoDB to save user account information."
     },
     {
-      "title": "Terrain Mapping System (Java)",
-      "description": "Built a Java terrain mapping system with a doubly linked list for efficient insertion, deletion, and traversal, achieving O(N + Q) time complexity."
+      "title": "Philosopical Chat Bot (Flast + Python + LLM) ",
+      "description": "Developed a Flask-based web application that integrates Hugging Face APIs for LLM retrieval, enabling an interactive, back-and-forth philosophical dialogue, featuring conversation memory, topic selection, and dynamic UI updates."
     },
     {
       "title": "Integrated Health/Fitness Application (HTML/CSS/JS)",
